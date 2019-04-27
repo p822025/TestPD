@@ -5,32 +5,32 @@ import json
 import random
 
 REPO = dict()
-REPO[1] = {'caseno': 2, 'ward': 'A091', 'name': '§˝§j©˙', 'age': 25, 'bedno': 10,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[1] = {'caseno': 2, 'ward': 'A091', 'name': 'ÁéãÂ§ßÊòé', 'age': 25, 'bedno': 10,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[2] = {'caseno': 2, 'ward': 'A091', 'name': '≥Ø§pßg', 'age': 25, 'bedno': 11,
-           'section': 'PEDD', 'gender': '§k', 'hr': [], 'rr': [], 'bt': [],
+REPO[2] = {'caseno': 2, 'ward': 'A091', 'name': 'Èô≥Â∞èÂêõ', 'age': 25, 'bedno': 11,
+           'section': 'PEDD', 'gender': 'Â•≥', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[3] = {'caseno': 2, 'ward': 'A091', 'name': 'ßı∂Æ¥@', 'age': 25, 'bedno': 12,
-           'section': 'PEDD', 'gender': '§k', 'hr': [], 'rr': [], 'bt': [],
+REPO[3] = {'caseno': 2, 'ward': 'A091', 'name': 'ÊùéÈõÖÂ©∑', 'age': 25, 'bedno': 12,
+           'section': 'PEDD', 'gender': 'Â•≥', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[4] = {'caseno': 2, 'ward': 'A091', 'name': '±i∞Í±j', 'age': 25, 'bedno': 13,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[4] = {'caseno': 2, 'ward': 'A091', 'name': 'ÂºµÂúãÂº∑', 'age': 25, 'bedno': 13,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[5] = {'caseno': 2, 'ward': 'A091', 'name': '≥≥≤W•¡', 'age': 11, 'bedno': 14,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[5] = {'caseno': 2, 'ward': 'A091', 'name': 'Èô∂Ê∑µÊ∞ë', 'age': 11, 'bedno': 14,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[6] = {'caseno': 2, 'ward': 'A091', 'name': '≥¡•i®©', 'age': 69, 'bedno': 15,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[6] = {'caseno': 2, 'ward': 'A091', 'name': 'È∫•ÂèØË≤ù', 'age': 69, 'bedno': 15,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[7] = {'caseno': 2, 'ward': 'A092', 'name': 'ßı≥¡ßJ', 'age': 33, 'bedno': 21,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[7] = {'caseno': 2, 'ward': 'A092', 'name': 'ÊùéÈ∫•ÂÖã', 'age': 33, 'bedno': 21,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[8] = {'caseno': 2, 'ward': 'A092', 'name': '®©•d•q', 'age': 22, 'bedno': 22,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[8] = {'caseno': 2, 'ward': 'A092', 'name': 'Ë≤ùÂç°Âè∏', 'age': 22, 'bedno': 22,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
-REPO[9] = {'caseno': 2, 'ward': 'A092', 'name': '•d•d¶Ë', 'age': 54, 'bedno': 23,
-           'section': 'PEDD', 'gender': '®k', 'hr': [], 'rr': [], 'bt': [],
+REPO[9] = {'caseno': 2, 'ward': 'A092', 'name': 'Âç°Âç°Ë•ø', 'age': 54, 'bedno': 23,
+           'section': 'PEDD', 'gender': 'Áî∑', 'hr': [], 'rr': [], 'bt': [],
            'sat': [], 'sbp': [], 'gcs': [], 'device': []}
 
 
