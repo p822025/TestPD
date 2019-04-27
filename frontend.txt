@@ -1,0 +1,51 @@
+ws = new WebSocket("ws://localhost:5000");
+
+********************
+      ws.onopen = function() {
+        
+      };
+*************
+ws.send(
+        JSON.stringify({
+          action: "subscribe",
+          type: "ward",
+          content: **{ward}**
+        })
+      );
+************
+      ws.onmessage = function(event) {
+        let data = JSON.parse(event.data);
+
+
+====== MANUPULATE DOM=======================
+        if (data.type == "patientcollection") {
+          console.log("update patientcollection");
+          let content = data.content;
+          vm.patient_list = content;
+        } else if (data.type == "patient") {
+          var hisid = data.content.hisid;
+          console.log("update patient: " + hisid);
+          let matchPatientIndex = vm.patient_list.findIndex(function(e) {
+            return e.hisid == hisid;
+          });
+          vm.patient_list.splice(matchPatientIndex, 1, data.content);
+        } else if (data.type == "users") {
+          vm.msg = "Connected. Active users:" + data.content;
+        }
+====================================
+
+ };
+
+*************
+      ws.onclose = function() {
+        vm.msg = "Disconnected. Reconnect will be attempted in 1 second.";
+        setTimeout(function() {
+          vm.connect();
+        }, 1000);
+      };
+*************
+      ws.onerror = function(err) {
+        vm.msg = "Socket encountered error: " + err.message + "Closing socket";
+        ws.close();
+      }; 
+*************
