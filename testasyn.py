@@ -21,7 +21,7 @@ async def run_asyn():
     tasks = []
     for url in urls:
         tasks.append(get_content_asyn(url)) 
-    await asyncio.wait(tasks)
+    await asyncio.gather(*tasks)
    
 def run():
     for url in urls:
@@ -29,11 +29,7 @@ def run():
 
 t1=datetime.now()
 loop = asyncio.get_event_loop()
-tasks=[]
-for url in urls:
-    tasks.append(loop.create_task(get_content_asyn(url))) 
-
-loop.run_until_complete(task for task in tasks)
+loop.run_until_complete(run_asyn())
 print ('async total time : ' + str(datetime.now()-t1))
 loop.close()
 
